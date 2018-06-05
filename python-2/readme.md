@@ -70,7 +70,7 @@ Porém, podemos converter explicitamente:
 
 ``>>> estados = ('RJ', 'SP') + tuple(['MG', 'ES'])``
 
-### Funções
+- Funções
 
 ```python
 max([10, 5, 7]) # Retorna o valor máximo
@@ -78,6 +78,22 @@ max([10, 5, 7]) # Retorna o valor máximo
 min((10, 3, 9)) # Retorna o valor mínimo
 
 sorted(nomes) # Retorna a lista ordenada
-
 ```
 
+## Funções
+
+As funções devem ser definidas pela palavra reservada **def**, seguindo o seguinte padrão:
+
+```python
+def gera_nome_convite(convite):
+  posicao_final = len(convite)
+  posicao_inicial = posicao_final - 4
+  parte1 = convite[0:4]
+  parte2 = convite[posicao_inicial:posicao_final]
+  return parte1 + ' ' + parte2
+```
+
+A indentação é extremamente importante no Python.
+
+No interpretador do Python, é preciso importar o biblioteca criada:
+``>>> from biblioteca import *``
