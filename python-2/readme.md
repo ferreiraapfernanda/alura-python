@@ -6,7 +6,7 @@
 
 [x] Tuples e dictionary
 
-[ ] Funções
+[x] Funções
 
 [ ] Cadastrando perfis
 
@@ -97,3 +97,15 @@ A indentação é extremamente importante no Python.
 
 No interpretador do Python, é preciso importar o biblioteca criada:
 ``>>> from biblioteca import *``
+
+## Cadastrando perfis
+
+``raw_input()`` para o input do usuário
+
+COnversão com as funções ``int()`` e ``float()``
+
+Para trabalhar com datas, utilizamos o **datetime**:
+  ```
+  from datetime import date
+  ano_atual = date.today().year
+  ```
