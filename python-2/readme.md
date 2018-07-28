@@ -12,7 +12,7 @@
 
 [x] Organizando melhor nosso código
 
-[ ] Expressão regulares
+[x] Expressão regulares
 
 [ ] Orientação a objetos e o conceito de classe
 
@@ -134,3 +134,47 @@ Para verificar o indice do valor na lista:
 > letras.index('c')
 2
 ```
+
+## Expressão regulares
+
+Biblioteca: ``import re``
+
+**Função match():** Só procura a primeira ocorrência
+
+``resultado = re.match('Py','Python')``
+``resultado.group()``
+
+**Agrupando caracteres:**
+
+``resultado = re.match('[pP]y','Python')``
+
+``re.match('[A-Za-z]y','Python') # Todos os caracteres de A até Z``
+
+**Função findall():** Procura todas as ocorrências
+
+``resultados = re.findall('([A-Za-z]y)', 'Python ou jython')``
+
+Retorna somente os caracteres exemplificados na expressão, ou seja, somente os dois primeiros caracteres.
+
+**Meta caracteres:**
+
+- **[A-Za-z]** qualquer string com letras
+- **+** um ou mais caracteres
+- **\w** letras e números (**\w|á|é** para acentos)
+- **\d** números
+- **\s** espaços
+- **?** possui um ou não possui (por exemplo **\d?** significa que possua ou não um número)
+- **\*** não possui ou possui vários
+- **.** qualquer caractere
+- **()** define grupos de expressões
+- **{x}** possua pelo menos x caracteres
+- **{x,y}** possua entre x e y caracteres
+- **^** no início da string
+- **$** no final da string
+
+
+**Raw string:**
+
+Devemos utilizar uma raw string para as expressões regulares, para evitar conflitos
+
+``r'[A-Z]+'``
