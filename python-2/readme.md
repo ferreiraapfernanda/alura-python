@@ -8,9 +8,9 @@
 
 [x] Funções
 
-[ ] Cadastrando perfis
+[x] Cadastrando perfis
 
-[ ] Organizando melhor nosso código
+[x] Organizando melhor nosso código
 
 [ ] Expressão regulares
 
@@ -64,7 +64,7 @@ Dicionário -> para a associação entre o tipo e um valor, por exemplo. São li
 >>> type(convites_com_valor)
 ```
 
-Como é uma linguagem de tipagem forte, não é possível concatenar dados de tipos diferentes (listas + tuplas, por exemplo). 
+Como é uma linguagem de tipagem forte, não é possível concatenar dados de tipos diferentes (listas + tuplas, por exemplo).
 
 Porém, podemos converter explicitamente:
 
@@ -105,7 +105,32 @@ No interpretador do Python, é preciso importar o biblioteca criada:
 COnversão com as funções ``int()`` e ``float()``
 
 Para trabalhar com datas, utilizamos o **datetime**:
-  ```
+
+```python
   from datetime import date
   ano_atual = date.today().year
-  ```
+```
+
+## Organizando melhor nosso código
+
+Para executar o arquivo: ``python app.py``
+
+If: ``if(x > 0):``
+
+Foreach: ``for nome in nomes:``
+
+Para definir o encoding da aplicação: ``# -*- coding: UTF-8 -*-``
+
+Para verificar um valor na lista:
+
+```python
+> 3 in numeros
+FALSE
+```
+
+Para verificar o indice do valor na lista:
+
+```python
+> letras.index('c')
+2
+```
